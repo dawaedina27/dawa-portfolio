@@ -1,32 +1,57 @@
-# React + TypeScript + Vite
+# Dawa Edina Hillary — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive personal portfolio for **Dawa Edina Hillary**, a Full-Stack Developer and ICT Specialist. The site highlights professional experience, technical skills, featured projects, education, certifications, and contact details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive single-page layout for desktop and mobile
+- Smooth navigation between portfolio sections
+- Hero, about, projects, skills, experience, and contact sections
+- Official technology SVG logos stored locally
+- Contact form interaction with a sent-state confirmation
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- CSS
+- Lucide React icons
 
-## Expanding the Oxlint configuration
+## Run Locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Prerequisites: Node.js 20 or later.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+git clone https://github.com/dawaedina27/dawa-portfolio.git
+cd dawa-portfolio
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open the local URL shown by Vite, typically `http://localhost:5173`.
+
+## Available Commands
+
+```bash
+npm run dev      # Start the development server
+npm run build    # Type-check and create a production build
+npm run preview  # Preview the production build locally
+npm run lint     # Run Oxlint
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/logos/   # Locally stored technology logos
+├── App.tsx         # Page content and interactions
+├── App.css         # Portfolio styling and responsive rules
+└── main.tsx        # Application entry point
+public/
+└── profile_pic.jpg # Portfolio profile photo
+```
+
+## License
+
+This project is for personal portfolio use.
